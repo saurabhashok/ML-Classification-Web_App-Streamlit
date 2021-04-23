@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+from PIL import Image
 from sklearn.svm import SVC
 from sklearn.linear_model import LogisticRegression
 from sklearn.ensemble import RandomForestClassifier
@@ -111,6 +112,9 @@ def main():
            st.write("Precision: ", precision_score(y_test, y_pred, labels=class_names).round(2))
            st.write("Recall: ", recall_score(y_test, y_pred, labels=class_names).round(2))
            plot_metrics(metrics)
+
+    img =  Image.open('/Users/apple/Downloads/ai_img.jpg_fit=scale')     
+    st.image(img)
 
 
     if st.sidebar.checkbox("Show raw data", False):
