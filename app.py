@@ -113,7 +113,7 @@ def main():
            st.write("Recall: ", recall_score(y_test, y_pred, labels=class_names).round(2))
            plot_metrics(metrics)
 
-    img =  Image.open('/Users/apple/Downloads/ai_img.jpg_fit=scale')     
+    img =  Image.open('ai_img.jpg')     
     st.image(img)
 
 
