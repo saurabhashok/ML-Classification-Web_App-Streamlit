@@ -3,6 +3,8 @@ import pandas as pd
 import numpy as np
 from PIL import Image
 from sklearn.svm import SVC
+import warnings
+warnings.filterwarnings('ignore')
 from sklearn.linear_model import LogisticRegression
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.preprocessing import LabelEncoder
